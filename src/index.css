@@ -1,3 +1,5 @@
+/* GENERAL */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,178 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #1D2538;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* NAVBAR */
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+header * {
+  display: inline;
+}
+
+header li {
+  margin: 20px;
+}
+
+header li a {
+  color: #E0E1Dc;
+  text-decoration: none;
+  padding: 20px;
+}
+
+header li a:hover {
+  color: #899d8e;
+}
+
+/* HOME */
+#home-content {
+  color: #E0E1Dc;
+  display: flex;
+  flex-direction: column;
+  padding: 150px;
+  font-size: xx-large;
+  display: inline-block;
+}
+
+#greeting {
+  color: #899d8e;
+}
+
+#content {
+  color: #899d8e;
+  margin: -5px;
+}
+
+
+#name {
+  margin: -5px;
+}
+
+#home-text-content {
+  width: 500px;
+  color: #E0E1Dc;
+  display: flex;
+  margin-top: -100px;
+  margin-left: 150px;
+  font-size: large;
+}
+
+#github-icon {
+  margin-left: 150px;
+  padding-top: 100px;
+  width: 60px;
+}
+
+#linkedIn-icon {
+  width: 60px;
+  padding-left: 40px;
+}
+
+/* ABOUT */
+#page-title {
+  color: #899d8e;
+  margin-top: -15px;
+}
+
+#about-me {
+  text-align: center;
+}
+
+#p1 {
+  color: #E0E1Dc;
+  width: 700px;
+  display: inline-block;
+  text-align: left;
+}
+
+#about {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.column {
+  padding: 5px;
+}
+
+#photos {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px
+}
+
+/* PROJECTS */
+#project-photo {
+  width: 800px;
+}
+
+#counter {
+  display: flex;
+  justify-content: center;
+}
+
+#projects-title {
+  display: flex;
+  justify-content: center;
+  color: #899d8e;
+}
+
+#projects-container {
+  text-align: center;
+}
+
+#text-content {
+  color: #E0E1Dc;
+  width: 700px;
+  display: inline-block;
+  text-align: center;
+  font-size: large;
+  padding-top: 20px;
+  margin: 20px;
+}
+
+#source-code {
+  background: #899d8e;
+  border-radius: 999px;
+  color: #E0E1Dc;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 18px;
+  text-decoration: none;
+}
+
+#button-container {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+/* CONTACT */
+#text-content-link {
+  color: #E0E1Dc;
+  width: 700px;
+  display: inline-block;
+  text-align: center;
+  font-size: large;
+  padding-top: 20px;
+  margin: 20px;
+  text-decoration: underline;
 }
