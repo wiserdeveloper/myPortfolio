@@ -1,8 +1,12 @@
 import NavBar from "../components/NavBar";
+import aboutBackground from "../images/aboutBackground.mp4";
 
 const About = () => {
   return (
     <body id="about">
+      <video autoPlay loop muted id="video">
+        <source src={aboutBackground} type="video/mp4" />
+      </video>
       <NavBar />
       <div id="about-me">
         <h1 id="page-title">About Me</h1>

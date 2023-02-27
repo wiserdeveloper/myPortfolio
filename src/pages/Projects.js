@@ -1,8 +1,12 @@
 import NavBar from "../components/NavBar";
+import projectsBackground from "../images/projectsBackground.mp4";
 
 const Projects = () => {
   return (
     <div id="projects-container">
+      <video autoPlay loop muted id="video">
+        <source src={projectsBackground} type="video/mp4" />
+      </video>
       <NavBar />
       <h1 id="projects-title">Functional Counter</h1>
       <div id="counter">

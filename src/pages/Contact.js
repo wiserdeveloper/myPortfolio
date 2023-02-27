@@ -1,8 +1,12 @@
 import NavBar from "../components/NavBar";
+import contactBackground from "../images/contactBackground.mp4";
 
 const Contact = () => {
   return (
     <div id="about">
+      <video autoPlay loop muted id="video">
+        <source src={contactBackground} type="video/mp4" />
+      </video>
       <NavBar />
       <h1 id="page-title">Contact Me</h1>
       <div>

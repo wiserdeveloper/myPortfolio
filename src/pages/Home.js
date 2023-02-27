@@ -1,8 +1,12 @@
 import NavBar from "../components/NavBar";
+import background from "../images/background.mp4";
 
 const Home = () => {
   return (
     <>
+      <video autoPlay loop muted id="video">
+        <source src={background} type="video/mp4" />
+      </video>
       <NavBar />
       <div id="home-content">
         <div id="greeting">Hello, my name is</div>
@@ -17,14 +21,14 @@ const Home = () => {
         <a href="https://github.com/wiserdeveloper">
           <img
             id="github-icon"
-            src="https://icones.pro/wp-content/uploads/2021/06/icone-github-grise.png"
+            src="https://www.nicepng.com/png/full/52-520535_free-files-github-github-icon-png-white.png"
             alt=""
           ></img>
         </a>
         <a href="https://www.linkedin.com/in/alyssa-wiser/">
           <img
             id="linkedIn-icon"
-            src="https://www.tebu-bio.com/blog/wp-content/uploads/2018/08/LinkedIn-icon-grey-RGB.png"
+            src="https://ytpr.co.ke/wp-content/uploads/2020/06/linkedin-icon-png-transparent-background-8.png"
             alt=""
           ></img>
         </a>
