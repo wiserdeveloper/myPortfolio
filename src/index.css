@@ -104,7 +104,7 @@ header li a:hover {
     line-height: 50px;
     white-space: nowrap;
     margin-left: -100px;
-    
+    overflow-x: hidden;
   }
   #greeting {
     font-size: 25px;
@@ -112,24 +112,29 @@ header li a:hover {
     white-space: nowrap;
     margin-left: -100px;
     margin-top: -120px;
+    overflow-x: hidden;
   }
   #content {
     font-size: 36px;
     line-height: 50px;
     margin-left: -100px;
+    overflow-x: hidden;
   }
   #home-text-content {
     margin-left: 50px;
     margin-right: 50px;
     width: 300px;
     margin-top: -130px;
+    overflow-x: hidden;
   }
   #github-icon {
     margin-left: 50px;
     margin-top: -60px;
+    overflow-x: hidden;
   }
   #video {
     height: 100%;
+    overflow-x: hidden;
   }
 }
 
