@@ -97,7 +97,7 @@ header li a:hover {
   padding-left: 40px;
 }
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 600px)
 {
   #name {
     font-size: 36px;
