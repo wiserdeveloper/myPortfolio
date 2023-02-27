@@ -2,7 +2,7 @@ const NavBar = () => {
   return (
     <body id="topnav-container">
       <header>
-        <div class="topnav">
+        <div className="topnav">
           <nav>
             <ul>
               <li>
