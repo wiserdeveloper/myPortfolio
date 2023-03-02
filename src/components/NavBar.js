@@ -1,34 +1,31 @@
 const NavBar = () => {
   return (
-    <body>
-      <div class="nav">
-        <input type="checkbox" id="nav-check"></input>
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
+    <body id="topnav-container">
+      <header>
+        <div className="topnav">
+          <nav>
+            <ul>
+              <li>
+                <a href="home">Home</a>
+              </li>
+              <li>
+                <a href="about">About</a>
+              </li>
+              <li>
+                <a href="projects">Projects</a>
+              </li>
+              <li>
+                <a href="https://docs.google.com/document/d/e/2PACX-1vQtNoZYCFw7yDl46cDQnuPIBhEb7_ptqam1KFcQ_e96foMd9OQD-_MNOlRbWnX75yiRPW3TrdNKpcRE/pub">
+                  Resume
+                </a>
+              </li>
+              <li>
+                <a href="contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="nav-links">
-          <a id="nav-text" href="home">
-            Home
-          </a>
-          <a id="nav-text" href="about">
-            About
-          </a>
-          <a id="nav-text" href="projects">
-            Projects
-          </a>
-          <a
-            id="nav-text"
-            href="https://docs.google.com/document/d/e/2PACX-1vQtNoZYCFw7yDl46cDQnuPIBhEb7_ptqam1KFcQ_e96foMd9OQD-_MNOlRbWnX75yiRPW3TrdNKpcRE/pub"
-          >
-            Resume
-          </a>
-          <a href="contact">Contact</a>
-        </div>
-      </div>
+      </header>
     </body>
   );
 };
