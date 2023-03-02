@@ -15,32 +15,101 @@ code {
 }
 
 /* NAVBAR */
-header {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
 }
 
-header * {
+.nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nav > .nav-header {
   display: inline;
 }
 
-header li {
-  margin: 20px;
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
 }
 
-header li a {
-  color: #E0E1Dc;
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
   text-decoration: none;
-  padding: 20px;
+  color: #efefef;
 }
 
-header li a:hover {
+.nav > .nav-links > a:hover {
   color: #899d8e;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+#nav-text {
+  margin-right: 80px;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #1D2538;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+    height: 100%;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
 
 /* HOME */
@@ -80,14 +149,14 @@ header li a:hover {
   width: 500px;
   color: #E0E1Dc;
   display: flex;
-  margin-top: -100px;
+  margin-top: -120px;
   margin-left: 150px;
   font-size: large;
 }
 
 #github-icon {
   margin-left: 150px;
-  padding-top: 100px;
+  padding-top: 70px;
   width: 60px;
 }
 
@@ -124,12 +193,12 @@ header li a:hover {
     margin-left: 50px;
     margin-right: 50px;
     width: 300px;
-    margin-top: -130px;
+    margin-top: -70px;
     overflow-x: hidden;
   }
   #github-icon {
     margin-left: 50px;
-    margin-top: -60px;
+    margin-top: -40px;
     overflow-x: hidden;
   }
   #video {
@@ -142,6 +211,10 @@ header li a:hover {
 #page-title {
   color: #899d8e;
   margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 #about-me {
@@ -173,6 +246,20 @@ header li a:hover {
   border-radius: 50%;
   width: 200px;
   height: 200px
+}
+
+@media screen and (max-width: 600px)
+{
+  #p1 {
+    width: 300px;
+  }
+  #page-title {
+    margin-top: 15px;
+  }
+  #photos {
+    height: 1px;
+    width: 1px;
+  }
 }
 
 /* PROJECTS */
@@ -223,6 +310,16 @@ header li a:hover {
   margin-bottom: 100px;
 }
 
+@media screen and (max-width: 600px)
+{
+  #project-photo {
+    width: 350px;
+  }
+  #text-content {
+    width: 350px;
+  }
+}
+
 /* CONTACT */
 #text-content-link {
   color: #E0E1Dc;
@@ -233,4 +330,20 @@ header li a:hover {
   padding-top: 20px;
   margin: 20px;
   text-decoration: underline;
+}
+
+#contact-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 600px)
+{
+  #text-content-link {
+    width: 350px;
+  }
 }

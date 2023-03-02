@@ -4,7 +4,7 @@ import contactBackground from "../images/contactBackground.mp4";
 const Contact = () => {
   return (
     <div id="about">
-      <video autoPlay loop muted id="video">
+      <video autoPlay loop muted id="contact-video">
         <source src={contactBackground} type="video/mp4" />
       </video>
       <NavBar />
